@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_banners_hero_banners",
+  "info": {
+    "name": "hero_banner",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "descriptionHeading": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button"
+    },
+    "sectionData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.section-data"
+    }
+  }
+}

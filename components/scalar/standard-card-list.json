@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_scalar_standard_card_lists",
+  "info": {
+    "name": "StandardCardList",
+    "icon": "id-card"
+  },
+  "options": {},
+  "attributes": {
+    "ListItemCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-item.list-item-card"
+    }
+  }
+}

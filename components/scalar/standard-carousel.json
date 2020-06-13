@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_scalar_standard_carousels",
+  "info": {
+    "name": "StandardCarousel",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "CarouselListItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-item.carousel-list-item"
+    }
+  }
+}

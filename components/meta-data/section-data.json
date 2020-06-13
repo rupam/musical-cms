@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_meta_data_section_data",
+  "info": {
+    "name": "SectionData",
+    "icon": "clone"
+  },
+  "options": {},
+  "attributes": {
+    "StandardImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-data.image"
+    },
+    "SectionNumber": {
+      "type": "integer"
+    },
+    "ComponentOrderInSection": {
+      "type": "integer"
+    }
+  }
+}

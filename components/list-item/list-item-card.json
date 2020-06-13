@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_list_item_list_item_cards",
+  "info": {
+    "name": "ListItemCard",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_section_standard_video_players",
+  "info": {
+    "name": "StandardVideoPlayer",
+    "icon": "caret-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

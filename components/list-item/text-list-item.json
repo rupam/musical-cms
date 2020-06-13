@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_scalar_text_list_items",
+  "info": {
+    "name": "TextListItem",
+    "icon": "list-alt"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "order": {
+      "type": "biginteger"
+    }
+  }
+}

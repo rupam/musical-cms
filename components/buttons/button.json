@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_buttons_buttons",
+  "info": {
+    "name": "Button",
+    "icon": "circle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary"
+      ]
+    }
+  }
+}

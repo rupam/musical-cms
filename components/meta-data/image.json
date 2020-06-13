@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_meta_data_images",
+  "info": {
+    "name": "StandardImage",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "alt": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

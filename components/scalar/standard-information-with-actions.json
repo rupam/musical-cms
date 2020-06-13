@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_section_standard_information_with_actions",
+  "info": {
+    "name": "StandardInformationWithActions",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button"
+    }
+  }
+}

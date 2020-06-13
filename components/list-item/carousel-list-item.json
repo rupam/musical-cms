@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_scalar_carousel_list_items",
+  "info": {
+    "name": "CarouselListItem",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "order": {
+      "type": "biginteger"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

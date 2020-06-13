@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "nav_bars",
+  "info": {
+    "name": "NavBar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "NavigationItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-item.navigation-item"
+    },
+    "Buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button"
+    }
+  }
+}
