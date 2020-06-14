@@ -7,7 +7,8 @@
   "options": {},
   "attributes": {
     "label": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "type": {
       "type": "enumeration",
@@ -15,6 +16,22 @@
         "primary",
         "secondary",
         "tertiary"
+      ],
+      "required": false
+    },
+    "order": {
+      "type": "integer",
+      "required": false
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
       ]
     }
   }

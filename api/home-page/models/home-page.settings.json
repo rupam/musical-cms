@@ -33,6 +33,11 @@
       "type": "component",
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"
+    },
+    "seoMetaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.seo-meta-data"
     }
   }
 }

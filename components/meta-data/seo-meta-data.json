@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_meta_data_seo_meta_data",
+  "info": {
+    "name": "seoMetaData",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
