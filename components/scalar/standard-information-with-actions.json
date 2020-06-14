@@ -24,6 +24,14 @@
       "type": "component",
       "repeatable": false,
       "component": "meta-data.image"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ]
     }
   }
 }
