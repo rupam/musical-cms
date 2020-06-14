@@ -22,6 +22,16 @@
     },
     "url": {
       "type": "string"
+    },
+    "clip": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "right",
+        "left",
+        "curveRight",
+        "curveLeft"
+      ]
     }
   }
 }

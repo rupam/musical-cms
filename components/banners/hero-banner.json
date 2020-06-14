@@ -23,10 +23,10 @@
       "repeatable": true,
       "component": "buttons.button"
     },
-    "sectionData": {
+    "backgroundImage": {
       "type": "component",
       "repeatable": false,
-      "component": "meta-data.section-data"
+      "component": "meta-data.image"
     }
   }
 }

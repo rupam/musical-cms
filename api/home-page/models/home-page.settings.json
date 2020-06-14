@@ -9,101 +9,30 @@
     "timestamps": true
   },
   "attributes": {
-    "Section_3": {
-      "type": "dynamiczone",
-      "components": [
-        "scalar.standard-video-player",
-        "list-item.text-list-item",
-        "scalar.standard-information-with-actions",
-        "scalar.standard-card-list",
-        "scalar.standard-carousel",
-        "scalar.standard-information-list-with-title",
-        "list-item.carousel-list-item",
-        "buttons.button",
-        "banners.hero-banner",
-        "list-item.navigation-item",
-        "list-item.list-item-card"
-      ]
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
     },
-    "Section_1": {
-      "type": "dynamiczone",
-      "components": [
-        "scalar.standard-video-player",
-        "list-item.text-list-item",
-        "scalar.standard-information-with-actions",
-        "scalar.standard-card-list",
-        "scalar.standard-carousel",
-        "scalar.standard-information-list-with-title",
-        "list-item.carousel-list-item",
-        "list-item.navigation-item",
-        "list-item.list-item-card",
-        "banners.hero-banner",
-        "buttons.button"
-      ]
+    "videoPlayer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-video-player"
     },
-    "Section_2": {
-      "type": "dynamiczone",
-      "components": [
-        "list-item.navigation-item",
-        "list-item.list-item-card",
-        "scalar.standard-video-player",
-        "list-item.text-list-item",
-        "scalar.standard-information-with-actions",
-        "scalar.standard-card-list",
-        "scalar.standard-carousel",
-        "scalar.standard-information-list-with-title",
-        "list-item.carousel-list-item",
-        "banners.hero-banner",
-        "buttons.button"
-      ]
+    "forAnArtist": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
     },
-    "Section_4": {
-      "type": "dynamiczone",
-      "components": [
-        "list-item.navigation-item",
-        "list-item.list-item-card",
-        "scalar.standard-video-player",
-        "list-item.text-list-item",
-        "scalar.standard-information-with-actions",
-        "scalar.standard-card-list",
-        "scalar.standard-carousel",
-        "scalar.standard-information-list-with-title",
-        "list-item.carousel-list-item",
-        "banners.hero-banner",
-        "buttons.button"
-      ]
+    "artistsWithUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-carousel"
     },
-    "Section_5": {
-      "type": "dynamiczone",
-      "components": [
-        "list-item.navigation-item",
-        "list-item.list-item-card",
-        "scalar.standard-video-player",
-        "list-item.text-list-item",
-        "scalar.standard-information-with-actions",
-        "scalar.standard-card-list",
-        "scalar.standard-carousel",
-        "scalar.standard-information-list-with-title",
-        "list-item.carousel-list-item",
-        "banners.hero-banner",
-        "buttons.button"
-      ]
-    },
-    "Section_6": {
-      "type": "dynamiczone",
-      "components": [
-        "list-item.navigation-item",
-        "list-item.list-item-card",
-        "scalar.standard-video-player",
-        "list-item.text-list-item",
-        "scalar.standard-information-with-actions",
-        "scalar.standard-card-list",
-        "scalar.standard-carousel",
-        "scalar.standard-information-list-with-title",
-        "list-item.carousel-list-item",
-        "banners.hero-banner",
-        "buttons.button"
-      ]
+    "forAnInvestor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
     }
   }
 }

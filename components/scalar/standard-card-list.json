@@ -2,14 +2,19 @@
   "collectionName": "components_scalar_standard_card_lists",
   "info": {
     "name": "StandardCardList",
-    "icon": "id-card"
+    "icon": "th-list"
   },
   "options": {},
   "attributes": {
-    "ListItemCard": {
+    "listItems": {
       "type": "component",
       "repeatable": true,
       "component": "list-item.list-item-card"
+    },
+    "backgroundImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.image"
     }
   }
 }

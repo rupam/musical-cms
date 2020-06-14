@@ -19,6 +19,11 @@
       "type": "component",
       "repeatable": true,
       "component": "buttons.button"
+    },
+    "backgroundImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.image"
     }
   }
 }

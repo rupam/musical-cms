@@ -9,11 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "HeroBanner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "banners.hero-banner"
-    },
     "Video": {
       "type": "component",
       "repeatable": false,
