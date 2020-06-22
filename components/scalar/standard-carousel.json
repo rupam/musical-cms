@@ -23,6 +23,11 @@
       "type": "component",
       "repeatable": false,
       "component": "meta-data.image"
+    },
+    "componentInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.component-info"
     }
   }
 }
