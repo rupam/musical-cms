@@ -30,6 +30,8 @@ spec:
         volumeMounts:
         - name: sqlite-persistent-storage
           mountPath: /src/.tmp
+      imagePullSecrets:
+        - name: gitlab-auth
       volumes:
       - name: sqlite-persistent-storage
         persistentVolumeClaim:
