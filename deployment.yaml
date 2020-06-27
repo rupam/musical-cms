@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: avneesh-apps
   name: musical-cms-deployment
   labels:
     app: musical-cms
@@ -37,6 +38,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: avneesh-apps
   name: musical-cms-service
 spec:
   type: ClusterIP
@@ -50,6 +52,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: sqlite-db-pv-claim
+  namespace: avneesh-apps
   labels:
     app: musical-cms
 spec:

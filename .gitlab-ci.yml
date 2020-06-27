@@ -42,5 +42,5 @@ deploy-app:
     - kubectl config set-credentials admin --token="$KUBE_TOKEN"
     - kubectl config set-context default --cluster=k8s --user=admin
     - kubectl config use-context default
-    - cd k8s && kubectl apply -f -
+    - kubectl apply -f deployment.yaml
     - kubectl patch deployment backend -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
