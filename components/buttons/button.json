@@ -23,10 +23,6 @@
       "type": "integer",
       "required": false
     },
-    "url": {
-      "type": "string",
-      "required": false
-    },
     "target": {
       "type": "enumeration",
       "enum": [
