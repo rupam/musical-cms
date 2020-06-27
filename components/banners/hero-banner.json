@@ -32,6 +32,17 @@
       "type": "component",
       "repeatable": false,
       "component": "meta-data.component-info"
+    },
+    "showcaseIamge": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

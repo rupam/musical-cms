@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/test",
-      "handler": "test.find",
+      "path": "/investor-page",
+      "handler": "investor-page.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/test",
-      "handler": "test.update",
+      "path": "/investor-page",
+      "handler": "investor-page.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/test",
-      "handler": "test.delete",
+      "path": "/investor-page",
+      "handler": "investor-page.delete",
       "config": {
         "policies": []
       }

@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "about_pages",
+  "collectionName": "investor_pages",
   "info": {
-    "name": "AboutPage"
+    "name": "InvestorPage"
   },
   "options": {
     "increments": true,
@@ -14,12 +14,7 @@
       "repeatable": false,
       "component": "banners.hero-banner"
     },
-    "videoPlayer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "scalar.standard-video-player"
-    },
-    "ourMission": {
+    "musicAndMoney": {
       "type": "component",
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"

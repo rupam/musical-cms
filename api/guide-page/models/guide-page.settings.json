@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "about_pages",
+  "collectionName": "guide_pages",
   "info": {
-    "name": "AboutPage"
+    "name": "GuidePage"
   },
   "options": {
     "increments": true,
@@ -19,10 +19,15 @@
       "repeatable": false,
       "component": "scalar.standard-video-player"
     },
-    "ourMission": {
+    "songShares": {
       "type": "component",
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"
+    },
+    "downloadApp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
     }
   }
 }
