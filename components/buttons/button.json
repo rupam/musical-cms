@@ -10,6 +10,10 @@
       "type": "string",
       "required": false
     },
+    "url": {
+      "type": "string",
+      "required": false
+    },
     "type": {
       "type": "enumeration",
       "enum": [
