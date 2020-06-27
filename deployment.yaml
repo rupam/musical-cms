@@ -30,12 +30,17 @@ spec:
         volumeMounts:
         - name: sqlite-persistent-storage
           mountPath: /src/.tmp
+        - name: uploads-persistent-storage
+          mountPath: /src/public/uploads/
       imagePullSecrets:
         - name: gitlab-auth
       volumes:
       - name: sqlite-persistent-storage
         persistentVolumeClaim:
           claimName: sqlite-db-pv-claim
+      - name: uploads-persistent-storage
+        persistentVolumeClaim:
+          claimName: uploads-db-pv-claim
 ---
 apiVersion: v1
 kind: Service
@@ -63,3 +68,17 @@ spec:
   resources:
     requests:
       storage: 20Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: uploads-db-pv-claim
+  namespace: avneesh-apps
+  labels:
+    app: musical-cms
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi

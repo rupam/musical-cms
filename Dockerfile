@@ -2,7 +2,6 @@ FROM registry.gitlab.com/avneeshroks/musical-cms:base
 
 WORKDIR /src
 COPY . /src
-
-RUN rm yarn.lock && yarn && yarn build
+RUN cp -r /tmp-app/node_modules . && yarn && yarn build
 
 ENTRYPOINT ["yarn","start"]
