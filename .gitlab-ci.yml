@@ -12,9 +12,6 @@ stages:
 services:
   - docker:19.03.1-dind
 
-before_script:
-  - docker info
-
 build-app:
   stage: build
   only:
