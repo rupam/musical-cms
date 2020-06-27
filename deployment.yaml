@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: musical-cms
-        image: vinaydottech/musical-cms
+        image: registry.gitlab.com/avneeshroks/musical-cms
         ports:
         - containerPort: 1337
         resources:

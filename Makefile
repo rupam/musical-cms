@@ -14,3 +14,7 @@ run:
 
 deploy:
 	kubectl apply -f deployment.yaml
+
+run-latest:
+	docker pull registry.gitlab.com/avneeshroks/musical-cms
+	docker run --rm -p 1337:1337 registry.gitlab.com/avneeshroks/musical-cms
