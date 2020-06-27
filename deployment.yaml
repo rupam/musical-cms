@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: musical-cms-deployment
+  labels:
+    app: musical-cms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: musical-cms
+  template:
+    metadata:
+      labels:
+        app: musical-cms
+    spec:
+      containers:
+      - name: musical-cms
+        image: vinaydottech/musical-cms
+        ports:
+        - containerPort: 1337
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        volumeMounts:
+        - name: sqlite-persistent-storage
+          mountPath: /src/.tmp
+      volumes:
+      - name: sqlite-persistent-storage
+        persistentVolumeClaim:
+          claimName: sqlite-db-pv-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: musical-cms-service
+spec:
+  type: ClusterIP
+  selector:
+    app: musical-cms
+  ports:
+  - port: 1337
+    targetPort: 1337
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sqlite-db-pv-claim
+  labels:
+    app: musical-cms
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
