@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: avneesh-apps
+  name: musical-cms-deployment
+  labels:
+    app: musical-cms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: musical-cms
+  template:
+    metadata:
+      labels:
+        app: musical-cms
+    spec:
+      containers:
+      - name: musical-cms
+        image: registry.gitlab.com/avneeshroks/musical-cms
+        ports:
+        - containerPort: 1337
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        volumeMounts:
+        - name: sqlite-persistent-storage
+          mountPath: /src/.tmp
+        - name: uploads-persistent-storage
+          mountPath: /src/public/uploads/
+      imagePullSecrets:
+        - name: gitlab-auth
+      volumes:
+      - name: sqlite-persistent-storage
+        persistentVolumeClaim:
+          claimName: sqlite-db-pv-claim
+      - name: uploads-persistent-storage
+        persistentVolumeClaim:
+          claimName: uploads-db-pv-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: avneesh-apps
+  name: musical-cms-service
+spec:
+  type: ClusterIP
+  selector:
+    app: musical-cms
+  ports:
+  - port: 1337
+    targetPort: 1337
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sqlite-db-pv-claim
+  namespace: avneesh-apps
+  labels:
+    app: musical-cms
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: uploads-db-pv-claim
+  namespace: avneesh-apps
+  labels:
+    app: musical-cms
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi

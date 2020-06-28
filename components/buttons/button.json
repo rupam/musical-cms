@@ -10,6 +10,10 @@
       "type": "string",
       "required": false
     },
+    "url": {
+      "type": "string",
+      "required": false
+    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -21,10 +25,6 @@
     },
     "order": {
       "type": "integer",
-      "required": false
-    },
-    "url": {
-      "type": "string",
       "required": false
     },
     "target": {
