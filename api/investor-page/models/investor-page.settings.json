@@ -18,6 +18,11 @@
       "type": "component",
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer"
     }
   }
 }

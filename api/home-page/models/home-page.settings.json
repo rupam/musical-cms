@@ -38,6 +38,11 @@
       "type": "component",
       "repeatable": false,
       "component": "meta-data.seo-meta-data"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.footer"
     }
   }
 }

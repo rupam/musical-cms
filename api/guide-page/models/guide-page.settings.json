@@ -28,6 +28,11 @@
       "type": "component",
       "repeatable": false,
       "component": "banners.hero-banner"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.footer"
     }
   }
 }
