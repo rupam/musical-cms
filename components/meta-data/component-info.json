@@ -14,8 +14,17 @@
         "StandardInformationListWithTitle",
         "StandardInformationWithActions",
         "StandardVideoPlayer",
-        "HeroBanner"
-      ]
+        "HeroBanner",
+        "SeoMetaData",
+        "StandardFooter"
+      ],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "unique": false
     }
   }
 }

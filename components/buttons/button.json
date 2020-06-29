@@ -17,11 +17,11 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "primary",
-        "secondary",
-        "tertiary"
+        "PrimaryButtonSolid",
+        "PrimaryButtonOutline",
+        "ButtonImage"
       ],
-      "required": false
+      "required": true
     },
     "order": {
       "type": "integer",
@@ -35,7 +35,7 @@
       ]
     },
     "image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",

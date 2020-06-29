@@ -1,22 +1,11 @@
 {
   "collectionName": "components_footer_footers",
   "info": {
-    "name": "Footer",
+    "name": "StandardFooter",
     "icon": "infinity"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "subTitle": {
-      "type": "string"
-    },
-    "button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "buttons.button"
-    },
     "logo": {
       "model": "file",
       "via": "related",
@@ -28,20 +17,15 @@
       "plugin": "upload",
       "required": false
     },
-    "MediaLinks": {
-      "type": "component",
-      "repeatable": true,
-      "component": "footer.media-links"
-    },
-    "backgroundImage": {
-      "type": "component",
-      "repeatable": false,
-      "component": "meta-data.image"
-    },
     "componentInfo": {
       "type": "component",
       "repeatable": false,
       "component": "meta-data.component-info"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button"
     }
   }
 }
