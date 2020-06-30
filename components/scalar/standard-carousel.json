@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "CarouselListItem": {
+    "carouselListItems": {
       "type": "component",
       "repeatable": true,
       "component": "list-item.carousel-list-item"
