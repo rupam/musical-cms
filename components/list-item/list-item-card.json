@@ -20,7 +20,7 @@
       "plugin": "upload",
       "required": false
     },
-    "actions": {
+    "buttons": {
       "type": "component",
       "repeatable": true,
       "component": "buttons.button"

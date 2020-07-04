@@ -6,6 +6,9 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "listItems": {
       "type": "component",
       "repeatable": true,

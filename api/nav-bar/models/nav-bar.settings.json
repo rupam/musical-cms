@@ -20,15 +20,20 @@
       "plugin": "upload",
       "required": false
     },
-    "NavigationItems": {
+    "navigationItems": {
       "type": "component",
       "repeatable": true,
       "component": "list-item.navigation-item"
     },
-    "Buttons": {
+    "buttons": {
       "type": "component",
       "repeatable": true,
       "component": "buttons.button"
+    },
+    "componentInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.component-info"
     }
   }
 }
