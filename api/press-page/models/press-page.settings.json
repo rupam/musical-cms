@@ -24,11 +24,6 @@
       "repeatable": false,
       "component": "scalar.standard-video-player"
     },
-    "footer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "footer.footer"
-    },
     "joinUs": {
       "type": "component",
       "repeatable": false,

@@ -24,10 +24,10 @@
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"
     },
-    "footer": {
+    "joinUs": {
       "type": "component",
       "repeatable": false,
-      "component": "footer.footer"
+      "component": "scalar.standard-information-with-actions"
     }
   }
 }

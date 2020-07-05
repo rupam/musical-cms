@@ -29,10 +29,10 @@
       "repeatable": false,
       "component": "banners.hero-banner"
     },
-    "footer": {
+    "joinUs": {
       "type": "component",
       "repeatable": false,
-      "component": "footer.footer"
+      "component": "scalar.standard-information-with-actions"
     }
   }
 }

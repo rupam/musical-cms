@@ -19,10 +19,10 @@
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"
     },
-    "footer": {
+    "joinUs": {
       "type": "component",
-      "repeatable": true,
-      "component": "footer.footer"
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
     }
   }
 }
