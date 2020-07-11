@@ -20,9 +20,6 @@
     "alt": {
       "type": "string"
     },
-    "url": {
-      "type": "string"
-    },
     "clip": {
       "type": "enumeration",
       "enum": [

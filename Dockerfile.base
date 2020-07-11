@@ -1,0 +1,5 @@
+FROM node:12-alpine
+RUN apk update && apk add python2
+WORKDIR /tmp-app
+COPY . /tmp-app
+RUN rm yarn.lock && yarn 

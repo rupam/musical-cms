@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "press_pages",
+  "info": {
+    "name": "PressPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
+    },
+    "ourMentions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-card-list"
+    },
+    "videoPlayer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-video-player"
+    },
+    "joinUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_meta_data_component_infos",
+  "info": {
+    "name": "ComponentInfo",
+    "icon": "info-circle"
+  },
+  "options": {},
+  "attributes": {
+    "template": {
+      "type": "enumeration",
+      "enum": [
+        "StandardCardList",
+        "StandardCarousel",
+        "StandardInformationListWithTitle",
+        "StandardInformationWithActions",
+        "StandardVideoPlayer",
+        "HeroBanner",
+        "SeoMetaData",
+        "StandardFooter",
+        "StandardTopNavigation"
+      ],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "unique": false
+    }
+  }
+}

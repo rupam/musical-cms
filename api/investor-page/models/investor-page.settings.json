@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "investor_pages",
+  "info": {
+    "name": "InvestorPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
+    },
+    "musicAndMoney": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    },
+    "joinUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    }
+  }
+}

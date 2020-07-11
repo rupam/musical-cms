@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "name": "StandardFooter",
+    "icon": "infinity"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "componentInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta-data.component-info"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "buttons.button"
+    }
+  }
+}

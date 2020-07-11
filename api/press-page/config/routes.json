@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/press-page",
+      "handler": "press-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/press-page",
+      "handler": "press-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/press-page",
+      "handler": "press-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

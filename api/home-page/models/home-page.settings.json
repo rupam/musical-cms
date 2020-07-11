@@ -38,6 +38,16 @@
       "type": "component",
       "repeatable": false,
       "component": "meta-data.seo-meta-data"
+    },
+    "joinUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    },
+    "downloadApps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
     }
   }
 }
