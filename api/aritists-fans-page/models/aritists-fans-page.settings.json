@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "aritists_fans_pages",
+  "info": {
+    "name": "AritistsFansPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
+    },
+    "weAre": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-list-with-title"
+    },
+    "forAnArtist": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    },
+    "artistsWithUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-carousel"
+    },
+    "forAFan": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    },
+    "joinUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    }
+  }
+}

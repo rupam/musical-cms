@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "guide_pages",
+  "info": {
+    "name": "GuidePage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
+    },
+    "videoPlayer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-video-player"
+    },
+    "songShares": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    },
+    "downloadApp": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
+    },
+    "joinUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    }
+  }
+}

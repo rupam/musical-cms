@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aritists-fans-page",
+      "handler": "aritists-fans-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aritists-fans-page",
+      "handler": "aritists-fans-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aritists-fans-page",
+      "handler": "aritists-fans-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

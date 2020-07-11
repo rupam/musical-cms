@@ -10,21 +10,21 @@
       "type": "string",
       "required": false
     },
+    "url": {
+      "type": "string",
+      "required": false
+    },
     "type": {
       "type": "enumeration",
       "enum": [
-        "primary",
-        "secondary",
-        "tertiary"
+        "PrimaryButtonSolid",
+        "PrimaryButtonOutline",
+        "ButtonImage"
       ],
-      "required": false
+      "required": true
     },
     "order": {
       "type": "integer",
-      "required": false
-    },
-    "url": {
-      "type": "string",
       "required": false
     },
     "target": {
@@ -33,6 +33,17 @@
         "_self",
         "_blank"
       ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -9,12 +9,22 @@
     "timestamps": true
   },
   "attributes": {
-    "Video": {
+    "heroBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banners.hero-banner"
+    },
+    "videoPlayer": {
       "type": "component",
       "repeatable": false,
       "component": "scalar.standard-video-player"
     },
-    "StandardInformationWithActions": {
+    "ourMission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "scalar.standard-information-with-actions"
+    },
+    "joinUs": {
       "type": "component",
       "repeatable": false,
       "component": "scalar.standard-information-with-actions"
